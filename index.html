@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b3f5c">
+  <meta name="description" content="Convite do XV da Lulu — 05 de dezembro de 2026.">
+  <title>XV da Lulu — Convite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ocean-bg" aria-hidden="true">
+    <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+    <span class="shell shell-left">◡</span><span class="starfish">✦</span><span class="shell shell-right">◡</span>
+  </div>
+
+  <header class="topbar">
+    <button id="btn-sound" class="icon-btn" type="button" aria-label="Ativar som do mar">♫</button>
+    <button id="btn-share" class="icon-btn" type="button" aria-label="Compartilhar convite">↗</button>
+  </header>
+
+  <main>
+    <section id="entry-page" class="page page--entry is-active" aria-label="Abertura do convite">
+      <div class="entry-card">
+        <p class="eyebrow">Você foi convidado(a) para</p>
+        <h1>XV da <span>Lulu</span></h1>
+        <p class="entry-text">Vem viver esse dia comigo.<br>Vai ser mágico. 💙</p>
+
+        <div class="countdown" aria-label="Contagem regressiva">
+          <div><strong id="days">00</strong><small>dias</small></div>
+          <div><strong id="hours">00</strong><small>horas</small></div>
+          <div><strong id="minutes">00</strong><small>min</small></div>
+          <div><strong id="seconds">00</strong><small>seg</small></div>
+        </div>
+        <p class="date-line">05 de dezembro de 2026</p>
+        <button id="btn-enter" class="primary-btn" type="button">Entrar no convite <span>🌊</span></button>
+      </div>
+    </section>
+
+    <section id="invite-page" class="page page--invite" aria-label="Convite" hidden>
+      <div class="invite-card">
+        <p class="eyebrow">Um convite especial</p>
+        <h2>XV da <span>Lulu</span></h2>
+        <p class="intro">Prepare-se para viver um dia inesquecível.</p>
+
+        <div class="date-box">
+          <div><strong>05</strong><span>de dezembro</span><span>de 2026</span></div>
+          <div class="date-divider"></div>
+          <div><strong>Sábado</strong><span>Horário da festa</span><span>20h</span></div>
+        </div>
+
+        <div class="actions">
+          <button id="btn-location" class="action-btn" type="button" disabled>📍 <span>Local em breve</span></button>
+          <button id="btn-confirm" class="action-btn" type="button">✅ <span>Confirmar presença</span></button>
+          <button id="btn-gifts" class="action-btn" type="button">🎁 <span>Lista de presentes</span></button>
+        </div>
+
+        <p class="signature">Com amor,<br><strong>Lulu & família</strong> 💙</p>
+      </div>
+    </section>
+
+    <section id="gifts-page" class="page page--gifts" aria-label="Lista de presentes" hidden>
+      <div class="gifts-card">
+        <button id="btn-back" class="back-btn" type="button">← Voltar</button>
+        <p class="eyebrow">Com carinho</p>
+        <h2>Lista de <span>Presentes</span></h2>
+        <p class="intro">Sua presença já é o maior presente. Se desejar nos mimar, aqui vão algumas ideias. 💙</p>
+
+        <div class="gift-grid">
+          <article><b>👗 Roupas</b><p>Vestido, blusa ou conjunto — Tam. P<br>Short ou calça — Tam. 34</p></article>
+          <article><b>💄 Cosméticos</b><p>Perfume doce, maquiagem, body splash<br>Produtos de cabelo da Eudora</p></article>
+          <article><b>👠 Calçados</b><p>Sandália<br>Tênis — Tam. 36/37</p></article>
+          <article><b>💍 Acessórios</b><p>Colares, pulseiras e brincos<br>Todos na cor dourado</p></article>
+          <article><b>👜 Bolsas</b><p>Bolsa de mão, bolsa transversal<br>ou necessaire</p></article>
+          <article><b>💠 Pix</b><p>13 99675-2376<br>Luiza Gonçalves Lacerda</p><button id="pix-key" class="copy-btn" type="button">Copiar chave</button></article>
+        </div>
+
+        <p class="thanks">Obrigada de coração. 💙</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
